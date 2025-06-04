@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shree Jal Bhoomi Travels</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Fonts & Stylesheets -->
+  <link rel="stylesheet" href="fonts/font.css">
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/utility.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container flex">
+      <a href="index.html" class="site-brand">
+        <span class="brand-name">
+          Shree Jal <i>Bhoomi Travels</i>
+        </span>
+      </a>
+      <button type="button" id="navbar-show-btn"><i class="fas fa-bars"></i></button>
+
+      <div id="navbar-collapse">
+        <button type="button" id="navbar-close-btn" class="flex">
+          <i class="fas fa-times"></i>
+        </button>
+        <ul class="navbar-nav">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="flex">
+    <div class="container">
+      <div class="header-title">
+        <h1>Leave Your Footprints</h1>
+        <p>Explore the world one step at a time. Discover unforgettable places and experiences with us.</p>
+      </div>
+
+      <!-- Search Form -->
+      <div class="header-form">
+        <h2>Choose Your Travel Location:</h2>
+        <form class="flex" action="search.html" method="GET">
+          <input type="text" name="destination" class="form-control" placeholder="Destination name" required />
+          <input type="date" name="date" class="form-control" required />
+          <input type="number" name="price" class="form-control" placeholder="Price ($)" min="0" />
+          <input type="submit" class="btn" value="Search" />
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <!-- Featured Places -->
+  <section id="featured" class="py-4">
+    <div class="container">
+      <div class="title-wrap">
+        <h1 class="sm-title"><b>Know About Some Places Before Your Travel</b></h1>
+        <h2 class="lg-title">Featured Places</h2>
+      </div>
+
+      <div class="featured-row">
+        <!-- Repeat this featured item structure for each place -->
+        <div class="featured-item my-2 shadow">
+          <img src="images/hiamchal pradesh.jpg" alt="Himachal Pradesh">
+          <div class="featured-item-content">
+            <span><p><i class="fas fa-map-marker-alt"></i><b> Himachal Pradesh</b></p></span>
+          </div>
+          <div>
+            <p class="text"><b>A breathtaking blend of snow-capped peaks, spiritual serenity, and thrilling adventures.</b></p>
+          </div>
+        </div>
+
+        <!-- Add more featured-item divs here as needed -->
+        <!-- Leh Ladakh -->
+        <div class="featured-item my-2 shadow">
+          <img src="images/leh ladakh.jpg" alt="Leh Ladakh">
+          <div class="featured-item-content">
+            <span><p><i class="fas fa-map-marker-alt"></i><b> Leh Ladakh</b></p></span>
+          </div>
+          <div>
+            <p class="text"><b>Known for majestic mountains, ancient monasteries, and rich Buddhist culture.</b></p>
+          </div>
+        </div>
+
+        <!-- Kashmir -->
+        <div class="featured-item my-2 shadow">
+          <img src="images/kashmir.jpg" alt="Kashmir">
+          <div class="featured-item-content">
+            <span><p><i class="fas fa-map-marker-alt"></i><b> Kashmir</b></p></span>
+          </div>
+          <div>
+            <p class="text"><b>Renowned for breathtaking landscapes and traditional crafts like Pashmina.</b></p>
+          </div>
+        </div>
+
+        <!-- Add more destinations similarly: Goa, Kerala, Rajasthan, etc. -->
+          <div class="featured-item my-2 shadow">
+          <img src="images/uttrakhand image.jpg" alt="Uttrakhand">
+          <div class="featured-item-content">
+            <span><p><i class="fas fa-map-marker-alt"></i><b> Leh Ladakh</b></p></span>
+          </div>
+          <div>
+            <p class="text"><b> A Himalayan state famous for spiritual destinations, adventure, and scenic landscapes.</b></p>
+          </div>
+        </div>
+
+         <div class="featured-item my-2 shadow">
+          <img src="images/lahul spiti.jpg" alt="Leh Ladakh">
+          <div class="featured-item-content">
+            <span><p><i class="fas fa-map-marker-alt"></i><b> Lahul Spiti</b></p></span>
+          </div>
+          <div>
+            <p class="text"><b>A cold desert valley with stark beauty, ancient monasteries, and rugged charm.</b></p>
+          </div>
+        </div>
+
+         <div class="featured-item my-2 shadow">
+          <img src="images/goa.jpg" alt="Leh Ladakh">
+          <div class="featured-item-content">
+            <span><p><i class="fas fa-map-marker-alt"></i><b> Goa</b></p></span>
+          </div>
+          <div>
+            <p class="text"><b> India’s beach capital, known for vibrant nightlife, Portuguese heritage, and tropical beaches.</b></p>
+          </div>
+        </div>
+
+         <div class="featured-item my-2 shadow">
+          <img src="images/kerala.jpg" alt="Leh Ladakh">
+          <div class="featured-item-content">
+            <span><p><i class="fas fa-map-marker-alt"></i><b> Kerala</b></p></span>
+          </div>
+          <div>
+            <p class="text"><b>Nicknamed *"God’s Own Country"*, it's renowned for lush backwaters, Ayurveda, and culture.</b></p>
+          </div>
+        </div>
+         <div class="featured-item my-2 shadow">
+          <img src="images/rajastahn.jpg" alt="Leh Ladakh">
+          <div class="featured-item-content">
+            <span><p><i class="fas fa-map-marker-alt"></i><b> Rajasthan </b></p></span>
+          </div>
+          <div>
+            <p class="text"><b>A royal land of palaces, deserts, forts, and colorful traditional festivals.</b></p>
+          </div>
+        </div>
+         <div class="featured-item my-2 shadow">
+          <img src="images/north east.jpg" alt="Leh Ladakh">
+          <div class="featured-item-content">
+            <span><p><i class="fas fa-map-marker-alt"></i><b> North East</b></p></span>
+          </div>
+          <div>
+            <p class="text"><b> A culturally rich region with tribal heritage, misty hills, and untouched natural beauty.</b></p>
+          </div>
+        </div>
+         <div class="featured-item my-2 shadow">
+          <img src="images/andaman.jpg" alt="Leh Ladakh">
+          <div class="featured-item-content">
+            <span><p><i class="fas fa-map-marker-alt"></i><b> Andaman </b></p></span>
+          </div>
+          <div>
+            <p class="text"><b>Tropical islands known for crystal-clear waters, coral reefs, and historic Cellular Jail.</b></p>
+          </div>
+        </div>
+         <div class="featured-item my-2 shadow">
+          <img src="images/laksahydweep.jpg" alt="Leh Ladakh">
+          <div class="featured-item-content">
+            <span><p><i class="fas fa-map-marker-alt"></i><b> Laksahydweep</b></p></span>
+          </div>
+          <div>
+            <p class="text"><b>A serene archipelago with white sand beaches, lagoons, and marine biodiversity.</b></p>
+          </div>
+        </div>
+         <div class="featured-item my-2 shadow">
+          <img src="images/nepal.jpg" alt="Leh Ladakh">
+          <div class="featured-item-content">
+            <span><p><i class="fas fa-map-marker-alt"></i><b> Nepal </b></p></span>
+          </div>
+          <div>
+            <p class="text"><b>A Himalayan nation famed for Mount Everest, spiritual sites, and warm hospitality.</b></p>
+          </div>
+        </div>
+         <div class="featured-item my-2 shadow">
+          <img src="images/bhutan.jpg" alt="Leh Ladakh">
+          <div class="featured-item-content">
+            <span><p><i class="fas fa-map-marker-alt"></i><b> Bhutan </b></p></span>
+          </div>
+          <div>
+            <p class="text"><b>The *"Land of the Thunder Dragon"*, prioritizing Gross National Happiness and tradition.</b></p>
+          </div>
+        </div>
+         <div class="featured-item my-2 shadow">
+          <img src="images/tamilnadu.jpg" alt="Leh Ladakh">
+          <div class="featured-item-content">
+            <span><p><i class="fas fa-map-marker-alt"></i><b> Tamilnadu </b></p></span>
+          </div>
+          <div>
+            <p class="text"><b> A cultural hub with ancient temples, classical music, and rich Dravidian heritage.</b></p>
+          </div>
+        </div>
+
+         <div class="featured-item my-2 shadow">
+          <img src="images/gujrat.jpg" alt="Leh Ladakh">
+          <div class="featured-item-content">
+            <span><p><i class="fas fa-map-marker-alt"></i><b> Gujrat </b></p></span>
+          </div>
+          <div>
+            <p class="text"><b>A vibrant state of white deserts, rich heritage, and the legacy of Mahatma Gandhi.</b></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container text-center py-3">
+      <p>&copy; 2025 Shree Jal Bhoomi Travels. All Rights Reserved.</p>
+    </div>
+  </footer>
+<!-- services section -->
+ <section id= "services" class= "py-4">
+   <div class="container">
+    <div class= "title-wrap">
+         <div class="text-center py-4">
+  <h1 class="sm-title" style="color: brown;">Know about services that we offer</h1>
+  <h2 class="lg-title" style="color:lightsalmon;">Our Services</h2>
+</div>
+
+   </div>
+         <div class="services-row">
+          <div class="services-item">
+      <span class="services-icon">
+        <i class= "fas fa-hotel"></i>
+        </span>
+        <h3>Luxurious Hotel</h3>
+        <p class="text"> Experience world-class comfort with our premium hotel accommodations.</p>
+         <a href="#" class="btn" style="color: red;">Read More </a>   
+      </div>
+    <div class="services-item">
+      <span class="services-icon">
+        <i class= "fas fa-map-marker-alt"></i>
+        </span>
+        <h3>Travel Guide</h3>
+        <p class="text">Discover hidden gems with the help of our expert travel guides.</p>
+        
+        <a href="#" class="btn" style="color: rgb(217, 20, 20);">Read More </a>        
+      </div>
+
+         <div class="services-item">
+      <span class="services-icon">
+        <i class= "fas fa-money-bill"></i>
+        </span>
+        <h3>Suitable Price</h3>
+        <p class="text">Enjoy memorable journeys with travel packages that fit your budget.</p>
+       <a href="#" class="btn" style="color: red;">Read More </a>   
+      </div>   
+        </div>
+    </div>    
+ </section>
+<!-- end of services section -->
+ <!-- testimonials section -->
+  <section id="testimonials" class="py-4">
+    <div class="container">
+      <div class="title-wrap">
+        <span class="sm-title"><h1>What our clients say about us</h1></span>
+        <h2 class="lg-title">Testimonials</h2>
+        </div>
+
+       <div class="test-row">
+        <div class="test-item">
+          <p class="text"><i>The tour was so special and peacefull for me.Greater thanks to mukesh sir ^(* . *)^ </i></p>
+         <div class="test-item-info">
+          <img src="images/anshul bhardwaj.png " alt="testimonial image">
+          <div>
+            <h3>Anshul Bhardwaj</h3>
+            <p class="text">Trip to Himachal Pradedsh</p>
+                 </div>
+             </div>
+          </div>
+
+        <div class="test-item">
+          <p class="text"><b>With the help of mukesh sir i almost cover all the leh ladakh and also the driver behaviour was so good .</b> </p>
+         <div class="test-item-info">
+          <img src="images/vishaliyar vishnoi.jpg " alt="testimonial image">
+          <div>
+            <h3>Vishaliyar Vishnoi</h3>
+            <p class="text">Trip to Leh Ladakh</p>
+                 </div>
+             </div>
+          </div>
+
+
+
+        <div class="test-item">
+          <p class="text"><strong>"From planning to execution, [Shree Jal Bhoomi Travels]journey seamless and unforgettable."</strong></p>
+         <div class="test-item-info">
+          <img src="images/neha kashayap.png " alt="testimonial image">
+          <div>
+            <h3>Neha Kashyap</h3>
+            <p class="text">Trip to Lahul Spiti</p>
+                 </div>
+             </div>
+          </div>
+          
+          
+
+         
+          <div class="test-item">
+          <p class="text">Good behaviour of all the staff and also mukesh sir took the responsibility of all over trip.</p>
+         <div class="test-item-info">
+          <img src="images/guneet.png " alt="testimonial image">
+          <div>
+            <h3>Guneet</h3>
+            <p class="text">Trip to Kashmir</p>
+                 </div>
+             </div>
+          </div>
+
+          <div class="test-item">
+        <p class="text"><b>"Had an amazing experience with [Shree Jal Bhoomi Travels] — everything was well-organized, and the service was top-notch from start to finish!"</b></p>
+         <div class="test-item-info">
+          <img src="images/shreya malhotra.jpg " alt="testimonial image">
+          <div>
+            <h3>Shreya Malhotra</h3>
+            <p class="text">Trip to Laksahydweep</p>
+                 </div>
+             </div>
+          </div>
+
+
+            <div class="test-item">
+        <p class="text">"From planning to execution, [Shree Jal Bhoomi Travels] made my journey seamless and unforgettable."</p>
+         <div class="test-item-info">
+          <img src="images/priyanka negi.jpg" alt="testimonial image">
+          <div>
+            <h3>Priyanka Negi</h3>
+            <p class="text">Trip to Nepal</p>
+                 </div>
+             </div>
+          </div>
+        </div>
+        </div>
+    </section>
+    <!-- video section -->
+       <section id = "video">
+            <div class = "video-wrapper flex">
+                <video loop>
+                    <source src = "videos/nature 2.mp4" type = "video/mp4">
+                </video>
+                <button type = "button" id = "play-btn">
+                    <i class = "fas fa-play"></i>
+                </button>
+            </div>
+        </section>
+
+
+        <!-- footer -->
+              <footer class = "py-4">
+            <div class = "container footer-row">
+                <div class = "footer-item">
+                    <a href = "index.html" class = "site-brand">
+                        Shree Jal <span>Bhoomi  Travels</span>
+                    </a>
+                    <p class = "text">Shree – Sacred, Divine, Graceful
+
+Jal – Aqua, Blue, Crystal, Flow, Serenity
+
+Bhoomi – Earth, Terra, Green, Nature, Roots
+
+Travels – Voyages, Journeys, Expeditions, Escapes, Getaways</p>
+                </div>
+
+                <div class = "footer-item">
+                    <h2>Follow us on: </h2>
+                    <ul class = "social-links">
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-pinterest"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-google-plus"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class = "footer-item">
+                    <h2>Popular Places:</h2>
+                    <ul>
+                        <li><a href = "#">North East</a></li>
+                        <li><a href = "#">Nepal</a></li>
+                        <li><a href = "#">Uttrakhand d</a></li>
+                        <li><a href = "#">Goa</a></li>
+                        <li><a href = "#">Leh Ladakh</a></li>
+                    </ul>
+                </div>
+
+                <div class = "subscribe-form footer-item">
+                    <h2>Subscribe for Newsletter!</h2>
+                    <form class = "flex">
+                        <input type = "email" placeholder="Enter Email" class = "form-control">
+                        <input type = "submit" class = "btn" value = "Subscribe">
+                    </form>
+                </div>
+            </div>
+        </footer>
+        <!-- end of footer -->
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+    <script>
+            // play/pause video
+            let video = document.querySelector('.video-wrapper video');
+            document.getElementById('play-btn').addEventListener('click', () => {
+                if(video.paused){
+                    video.play();
+                } else {
+                    video.pause();
+                }
+            });
+        </script>
+</body>
+</html>
+
+
